@@ -1,0 +1,6 @@
+body {
+    background-image: url("/fondoo.jpg");
+    background-size: cover; /* Escalar la imagen para cubrir todo el fondo */
+     background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+    background-attachment: fixed; 
+}

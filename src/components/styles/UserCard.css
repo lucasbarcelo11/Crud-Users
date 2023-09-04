@@ -1,69 +1,70 @@
 .card__article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     max-width: 28rem;
     height: 22rem;
-    margin: 0 auto;
+    margin: 5rem auto;
+    flex-direction: column;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgba(106, 171, 251, 0.215);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex-wrap: wrap;
   }
   
-  .card__article h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .card__article hr {
-    border: 1px solid #ccc;
-    margin: 10px 0;
-  }
-  
-  .card__article ul {
-    list-style: none;
-    padding: 0;
-    height: 60%;
-  }
-  
-  .card__article li {
-    display: flex;
-    align-items: center;
-  }
-  
-  .card__article .span1 {
-    display: inline-block;
-    font-weight: bold;
-    margin-right: 10px;
-  }
-  
-  .card__article .span2 {
-    flex: 1;
-  }
-  
-  .card__article footer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-  }
-  
-  .card__article button {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .card__article button i {
-    margin-right: 5px;
-    width: 3rem;
-  }
-  
-  .card__article button:hover {
-    background-color: #45a049;
-  }
-  
-  .card__article button:active {
-    background-color: #3e8e41;
-  }
+  /* Estilos para el título */
+.card__article h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Estilos para la línea divisoria */
+.card__article hr {
+  border: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+/* Estilos para la lista de elementos */
+.card__article ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card__article li {
+  margin-bottom: 10px;
+}
+
+/* Estilos para los íconos en la lista */
+.card__article i.bx {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+/* Estilos para el pie de página */
+.card__article footer {
+  margin-top: 20px;
+}
+
+/* Estilos para los botones en el pie de página */
+.card__article button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card__article button:hover {
+  background-color: #0056b3;
+}
+.bx{
+  border: none;
+}
+.footer_usercard{
+  display: flex;
+  justify-content: space-between; /* Empuja los elementos al principio y al final */
+  align-items: center; /* Alinea verticalmente los elementos al centro */
+}
