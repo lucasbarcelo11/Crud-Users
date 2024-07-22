@@ -1,14 +1,10 @@
 import "./styles/UserCard.css";
 
-const UserCard = ({ user, deleteUsersById, setUpdateInfo, handleOpenForm }) => {
+const UserCard = ({ user, deleteUsersById }) => {
   const handleDelete = () => {
     deleteUsersById("", user.id);
   };
 
-  const handleUpdate = () => {
-    setUpdateInfo(user);
-    handleOpenForm();
-  };
 
   return (
     <div className="card__article">
@@ -45,12 +41,9 @@ const UserCard = ({ user, deleteUsersById, setUpdateInfo, handleOpenForm }) => {
         <button onClick={handleDelete}>
           <i className="bx bx-trash"></i>
         </button>
-        <button onClick={handleUpdate}>
-          <i className="bx bx-edit"></i>
-        </button>
       </footer>
     </div>
   );
-};
+}
 
 export default UserCard;

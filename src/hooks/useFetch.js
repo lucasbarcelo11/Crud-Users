@@ -38,19 +38,9 @@ const useFetch = (baseUrl) => {
             .catch(error => console.log(error))
     }
 
-    //Update
-    const updateApi = (path, id, data) =>{
-        const url = `${baseUrl}${path}/${id}/`
-        axios.patch(url, data)
-            .then(resp => {
-                console.log(resp.data)
-                const infoApiMapped = infoApi.map(e => e.id === id ? resp.data : e)
-                setInfoApi (infoApiMapped)
-            })
-            .catch(error => console.log(error))
-    }
 
-    return[ infoApi, getApi, postApi, deleteApi, updateApi ]
+
+    return[ infoApi, getApi, postApi, deleteApi ]
     
 }
 export default useFetch
